@@ -29,7 +29,7 @@ class CalendarPage extends StatelessWidget {
     return Table(
       border: tableBorder,
       children: [
-        if (dowVisible) _buildDaysOfWeek(context),
+       // if (dowVisible) _buildDaysOfWeek(context),
         ..._buildCalendarDays(context),
       ],
     );
