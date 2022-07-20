@@ -80,7 +80,7 @@ class CellContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
-                  child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                  child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                       style: calendarStyle.disabledTextStyle),
                 ),
                 Text(text, style: calendarStyle.disabledTextStyle),
@@ -101,7 +101,7 @@ class CellContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
-                  child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                  child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                       style: calendarStyle.selectedTextStyle),
                 ),
                 Text(text, style: calendarStyle.selectedTextStyle),
@@ -123,7 +123,7 @@ class CellContent extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(bottom: 10.0),
-                      child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                      child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                           style: calendarStyle.rangeStartTextStyle),
                     ),
                     Text(text, style: calendarStyle.rangeStartTextStyle),
@@ -144,7 +144,7 @@ class CellContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
-                  child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                  child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                       style: calendarStyle.rangeEndTextStyle),
                 ),
                 Text(text, style: calendarStyle.rangeEndTextStyle),
@@ -165,7 +165,7 @@ class CellContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
-                     child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                     child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                       style: calendarStyle.todayTextStyle),
                 ),
                 Text(text, style: calendarStyle.todayTextStyle),
@@ -186,7 +186,7 @@ class CellContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
-                    child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                    child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                       style: calendarStyle.holidayTextStyle),
                 ),
                 Text(text, style: calendarStyle.holidayTextStyle),
@@ -208,7 +208,7 @@ class CellContent extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(bottom: 10.0),
-                       child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                       child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                           style: calendarStyle.withinRangeTextStyle),
                     ),
                     Text(text, style: calendarStyle.withinRangeTextStyle),
@@ -229,7 +229,7 @@ class CellContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
-                  child: Text(DateFormat.E(locale).format(day).replaceAll('.',''),
+                  child: Text(DateFormat.E(locale).format(day).substring(0, 2),
                       style: calendarStyle.outsideTextStyle),
                 ),
                 Text(text, style: calendarStyle.outsideTextStyle),
@@ -253,7 +253,7 @@ class CellContent extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(bottom: 10.0),
                   child: Text(
-                    DateFormat.E(locale).format(day).replaceAll('.',''), 
+                    DateFormat.E(locale).format(day).substring(0, 2), 
                     style: isWeekend
                         ? calendarStyle.weekendTextStyle
                         : calendarStyle.defaultTextStyle,
